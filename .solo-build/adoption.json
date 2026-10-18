@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "repository": "KingSingOS/NextJS-Enterprisec",
+  "audited_revision": "8817db5fc8c91af2336adad1b653b4e1dcb054a9",
+  "template": {
+    "version": "1.0.0",
+    "sha256": "a06810064c77948c51f7efc6e212169d54bdd6a4e39172515cd746c065693bde"
+  },
+  "instructions": [],
+  "trackers": [],
+  "checks": "not-configured",
+  "profile": "unknown",
+  "profile_verified": false,
+  "state": "adoption-in-progress",
+  "unresolved_mappings": [
+    "instructions",
+    "trackers"
+  ],
+  "configuration": "not-configured",
+  "admission": "fail-admission",
+  "evidence_authenticated": false,
+  "generated_agent_route": "AGENTS.md",
+  "candidate_native_script_names_unexecuted": [
+    "test",
+    "lint",
+    "build"
+  ],
+  "native_checks_verified": false
+}
