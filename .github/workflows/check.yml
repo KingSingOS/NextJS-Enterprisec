@@ -30,6 +30,6 @@ jobs:
       - name: Smoke & Acceptance tests
         run: |
           yarn build-storybook --quiet
-          npx concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
-            "npx http-server storybook-static --port 6006 --silent" \
-            "npx wait-on tcp:127.0.0.1:6006 && yarn test-storybook"
+          npx --yes --package=concurrently@10.0.6 --package=http-server@14.1.1 --package=wait-on@8.0.3 concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
+            "http-server storybook-static --port 6006 --silent" \
+            "wait-on tcp:127.0.0.1:6006 && yarn test-storybook"
